@@ -3,6 +3,31 @@
     mon commentaire sur plusieurs lignes
     */
 
+
+// Les types de variables
+
+//type STRING
+let prenom = 'Johny';
+
+//type NUMBER
+let age = 46;
+
+//type BOOLEAN true / false
+let happy = true;
+
+//type NULL
+let hasCar= null;
+
+//type UNDEFINED
+let sex = undefined;
+
+//type SYMBOL
+
+//type OBJECT
+ let human= {
+     nom:'Johny',
+     taille: "xxx" };
+
 /*
     Une variable est une zone mémoire dans laquelle on pourra stocker des informations.
     3 mots clé pour déclarer une varibale :

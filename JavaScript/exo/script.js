@@ -1,5 +1,5 @@
 'use strict'
-
+/*
 // déclarer une variable qui contiendra un nombre entier qui s'appelle nombre, et lui affecter le nombre 13.
 let nombre = 13;
 
@@ -27,25 +27,26 @@ function ditBonjour (nom, prenom){
 }
 console.log(ditBonjour("Heijlen", "Johny"));
 
-/**
- * Faire une fonction qui affiche une fenetre en fonction de la réponse ) la question : quel jour serons nous demain si aujourd'hui est la veille d'hier.
- * La réponse est renseignée par l'utilisateur.
- */
 
+//Faire une fonction qui affiche une fenetre en fonction de la réponse ) la question : quel jour serons nous demain si aujourd'hui est la veille d'hier.
+//La réponse est renseignée par l'utilisateur.
+ 
 
+/
 function calendrier (reponse){
     console.log(reponse);
      if(reponse.toLowerCase()==="hier"){
      alert("Bonne réponse");
     }else{alert("Mauvaise réponse");
-}}
+}} 
 
-calendrier (prompt("Quel jour nous serons demain si aujourd'hui est la veille d'hier?"));
+//calendrier (let reponse = prompt("Quel jour nous serons demain si aujourd'hui est la veille d'hier?"));
 
 
 //    OU
+let reponse = prompt("Quel jour serons nous demain si aujourd'hui est la veille d'hier ?");
+
 function askQuestion(){
-    let reponse = prompt("Quel jour serons nous demain si aujourd'hui est la veille d'hier ?");
 
     if(bonneReponse(reponse)){
         alert("Bonne réponse");
@@ -69,29 +70,70 @@ function rejouer(){
 }
 askQuestion();
 
-/**
- * Faire une fonction qui s'auto-excecute et qui affiche "Bonjour" + prenom qu'elle prendra en paramètre
- */
 
- (function salut(prenom){
-     alert("Bonjour "+prenom))("Johny");
- }
- salut("Johny");
+//Faire une fonction qui s'auto-excecute et qui affiche "Bonjour" + prenom qu'elle prendra en paramètre
+ 
 
- /**
-  * Faire une expression de fonction qui divise 2 nombres et retourne le resultat
-  */
+ (function (prenom){
+     console.log(`Bonjour ${prenom}`);}) (prompt('Quel est votre prenom ?'));
+ 
+
+ 
+// Faire une expression de fonction qui divise 2 nombres et retourne le resultat
+  
 
   function division(nombre1, nombre2){
-  /*    if(nombre2===0){ 
+      if(nombre2===0){ 
           alert("Division par 0 imposible");
-      }else{*/
+      }else{
           let resultat = nombre1 / nombre2;
-          
-          return resultat;
-          
-         
-      
-  }
-  division(10,2);
+                    return resultat;
+  }}
+
+  let resDivision = division(10,2);
+  console.log(resDivision);
+
+  // Faire une expression de fonction qui divise 2 nombres et retouren le résultat
  
+  
+  const diviser = function (num1, num2){
+    let resultat = num1 / num2;
+    return resultat;
+}
+
+  console.log(diviser(16,4));
+*/
+
+// EXO
+// Réaliser un switch qui prends la variable nombre 2 et qui afficher :
+// "a" si nombre2 est égal à 3 
+// "b" si nombre2 est égal à 5
+// "c" si nombre2 est égal à 7
+// "d" si nombre2 est égal à autre chose
+
+console.log("______SWITCH__________");
+
+let rep;    
+function getReponse(nombre5){     
+    switch (nombre5) {
+        case 3:
+            rep = ("a");
+            break;
+        case 5:
+            rep = ("b");
+            break;
+        case 7 :
+        case 8 :
+            rep = ("c");
+            break;
+        default:
+            rep = ("d");
+    }
+    return rep;
+}
+let index = 0;
+
+for(index ; index <=10 ; ) {
+    console.log(index+ " " +getReponse(index));
+    index++;
+}

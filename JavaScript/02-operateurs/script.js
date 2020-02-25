@@ -105,7 +105,14 @@ let v1=5;
 
 let v2 = (v1 >=5) ?  v1+2 : v1 + 3;
 console.log("v2 : "+v2);
-/* EN RESUME = comparaison ? resultat si TRUE : resultat si FALSE */
+/* EN RESUME = comparaison ? resultat si TRUE : resultat si FALSE 
+remplace
+    if(v1>=5){
+        v2= v1 + 2;
+    }else{
+        v2= v1 + 3;
+    }
+*/
 
 // Boucles
 
