@@ -1,0 +1,21 @@
+div>div { 
+    display: block;
+}
+
+
+
+.menu_logon {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 60%;
+}
+
+
+.identifiant, .mdp, .choixUser {
+    margin: 0 auto;
+width: 90%;
+}
+
+label {
+    width:300px;
+}

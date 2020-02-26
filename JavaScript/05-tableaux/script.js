@@ -1,6 +1,6 @@
 'use strict'; //impose de déclarer avec let ou const toutes les variables
-/*
 
+/*
 //En JS, les tableaux sont des objets
 
 console.log("Déclaration de tableau");
@@ -63,13 +63,9 @@ let array_3 = [
     console.log(array_3  [array_3.length-1]  [1] [array_3[array_3.length-1][1].length-2]);
     
 
-    console.log("_______________Parcourir un tableau");
-    console.log("Loop .. FOR")
-    for(let i=0; i<array_3.length;i++){
-        console.log(array_3[i]);
-    }
-    // OU
-    console.log("___________Loop .. FOR ... OF");
+    console.log("___Parcourir un tableau");
+
+    console.log("______________Loop .. FOR ... OF");
 
     for( const elt of array_3){
         console.log(elt);
@@ -117,7 +113,7 @@ console.log('bb : '+bb);
 
 let [g1, g2, ...g3] = array_3; // les 3 points avant g3 affectent la suite du tableau initial à g3
 console.log(g3);
-*/
+
 
 console.log("__________________Les méthodes_____________");
 let courses=["poivron", "carottes", "poisson","épinard","une pomme"];
@@ -165,3 +161,23 @@ console.log(alphaArray);
 
 // créer une chaine de caractères à partir d'un tableau
 console.log(alphaArray.join(' + '));
+
+*/
+/*
+let tab = [3];
+console.log(tab);
+tab[10] = 70;
+console.log(tab);
+tab.forEach(function(elt){
+    console.log(elt);
+});
+*/
+let tab = [3];
+console.log(tab);
+tab[10] = 70;
+console.log(tab);
+for (let i=0; i<tab.length ; i++){
+    console.log(tab[i])
+}
+;
+
