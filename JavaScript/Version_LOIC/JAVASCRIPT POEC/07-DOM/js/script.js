@@ -1,17 +1,14 @@
 'use strict'
 
-//récupérer un élément unique
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded',()=>{
     let title = document.querySelector('h1');
     console.log(title);
 
-    //Récupérer premier élément p de la page
-    let monParagraphe = document.querySelector('p');
+    let monParagraphe =document.querySelector('p');
     console.log(monParagraphe);
-    //Récupérer TOUS les éléments p de la page
-    let mesParagraphes = document.querySelectorAll('p');
-    console.log(mesParagraphes);
 
+    let mesParagrpahes = document.querySelectorAll("p");
+    console.log(mesParagrpahes);
 
     let inputText = document.querySelector("#test");
     console.log(inputText);
@@ -19,17 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let bouton = document.querySelector('form input[type=submit]');
     console.log(bouton);
 
-    bouton.addEventListener('click', function (e) {
+    bouton.addEventListener('click', function(e){
         e.preventDefault();
-        console.log("Bou ! ");
+        console.log("Bou !");
 
         let newColor = inputText.value;
         console.log(newColor);
 
-        mesParagraphes.forEach(element => {
+        mesParagrpahes.forEach((element)=>{
             console.log(element);
             element.style.backgroundColor = newColor;
-
-        });
-    })
+          }  );
+    });
 });

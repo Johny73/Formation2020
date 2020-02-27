@@ -1,21 +1,28 @@
-div>div { 
-    display: block;
-}
-
-
 
 .menu_logon {
     border: 1px solid black;
-    margin: 0 auto;
-    width: 60%;
+    margin: auto;
+    width: 50%;
+    padding: 3px;
+    height: 160px;
+    align-items: center ;
+    vertical-align: middle;
 }
 
-
-.identifiant, .mdp, .choixUser {
+.identifiant,
+.mdp,
+.choixUser {
     margin: 0 auto;
-width: 90%;
+    padding:3px
+    width: 95%;
+    margin: 5px;
+    border: thick double red;
+    align-content: space-around;
 }
+
 
 label {
-    width:300px;
+   background-color: aqua;
+   width: 40%;
+   display: inline-block;
 }

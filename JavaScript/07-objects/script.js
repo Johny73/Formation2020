@@ -174,7 +174,7 @@ julienne.myFirstName="Julienne";
     
     let date2= new Date(2020, 01, 24);//Attention le mois de janvier = 0
     console.log(date2)
-*/
+
     console.log("_________________objet math_______");
 
     let pi = Math.PI;
@@ -193,3 +193,18 @@ julienne.myFirstName="Julienne";
 
     const monnaie = 1234.345;
     console.log(new Intl.NumberFormat('ja-JP', {style: 'currency', currency: 'JPY' }).format(monnaie));
+    */
+
+    function Person(nom, prenom, titre){
+        this.nom = nom,
+        this.prenom = prenom,
+        this.titre = titre
+    };
+
+    Person.prototype.function = nomComplet(); {
+        return this.titre+" "+this.nom+" "+this.prenom
+        
+    }
+    
+    Person("Dupont", "Marie", "Mme");
+    console.log(dupont.nomComplet());
