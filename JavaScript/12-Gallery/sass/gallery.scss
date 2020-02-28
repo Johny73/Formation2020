@@ -1,0 +1,115 @@
+body{
+    width: 90%;
+    background: grey;
+    margin: 0 auto;
+
+    h1{
+        font-family: 'AvaraBold';
+        font-weight: normal;
+        font-style: normal; 
+        
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+
+        padding: 20px;
+        color: #483e3e;
+    }
+}
+
+#zoom{
+    background-color: #514e4e;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    ul{
+        li{
+            display: none;
+            color: pink;
+
+            h2{
+                font-size: 1.2em;
+                font-weight: bold;
+                padding: 10px;
+                background:purple;
+            }
+
+            p{
+                display: none;
+                padding: 0 10px 10px 10px;
+            }
+
+            img{    
+                width: 100%;
+            }
+
+            &.focus{
+                display: block;
+            }
+            
+        }
+    }
+}
+
+nav{
+    display: block;
+    overflow: hidden;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        li{
+            width: 50%;
+            margin-bottom: 5px;
+
+            &.focus{
+                width: calc(50% - 8px);
+                border: 4px solid pink;
+            }
+
+            img{
+                width: 100%;
+            }
+
+            &:hover{
+                width: calc(50% - 8px);
+                border: 4px solid orange;
+
+                &.focus{
+                    border-color: red;
+                }
+            }
+        }
+    }
+}
+
+
+
+// Descktop :
+
+@media screen and (min-width: 640px) {
+    #zoom{
+        display: block;
+        width: 78%;
+        float: left;
+    }
+    nav{
+        display: block;
+        width: 20%;
+
+        ul{
+            display: block;
+            li{
+                width: 100%;
+                &.focus{
+                    width: calc(100% - 8px);
+                }
+                &:hover{
+                    width: calc(100% - 8px);
+                }
+            }
+        }
+    }
+}

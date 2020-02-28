@@ -1,0 +1,29 @@
+
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+#div2 {
+    display: flex;
+    flex-wrap: wrap;
+    width:80%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+div, img {
+    border: 1px solid black;
+}
+#div2>img{
+    width: 45%;}
+
+
+#principal {
+    margin: auto;
+    display:block;
+ 
+}

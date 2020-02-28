@@ -46,7 +46,7 @@ function clickHandler(e){
     }
 
     // Récupère la sélection du joueur :
-    console.log("event : ",e.target);
+    console.log("e.target : ",e.target);
     console.log("this : ",this);
     const mySelection = this.getAttribute("href");
 
@@ -54,10 +54,39 @@ function clickHandler(e){
     match(mySelection, botSelection());
 }
 
-function match(human, bot){
+function Fumi(name, opponent) { this.name = name; this.opponent = opponent; }
 
+const fumis = [
+    new Fumi('feuille'),
+    new Fumi('ciseaux'),
+    new Fumi('cailloux'),
+];
+
+fumis[0].opponent = fumis[2];
+fumis[1].opponent = fumis[0];
+fumis[2].opponent = fumis[1];
+
+Fumi.prototype.versus = function(opponent) {
+    if (opponent == this.opponent) {
+        return '1';
+    }
+
+    if (opponent.opponent == this) {
+        return '-1';
+    }
+
+    return '0';
+}
+
+function match(human, bot){
+ 
     let winner = "BOT";
     
+    const winnerName = human.versus(bot);
+
+
+    /*
+    // Version Julia
     if(human === bot){
         winner = "NO WINNER";
     }else if(

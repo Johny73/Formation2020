@@ -54,12 +54,17 @@ MY_PARENT.style.border = "3px double red";
 console.log(MY_PARENT.classList);
 MY_PARENT.className = "trash";
 MY_PARENT.classList.add("Truc");
-
+/*
 //Parcourir la liste des éléments en récupérant un item 
 let list= [];
 for (let i = 0 ; i <HTML_CHILD.length ; i++){
     list.push(HTML_CHILD.item(i));
 };
+*/
+HTML_CHILD.forEach(element => {
+    list.push(HTML_CHILD.item(i));
+    
+});
 console.log(list);
 
 
